@@ -24,7 +24,7 @@ const request = https.request(options, (res) => {
   })
 
   res.on('close', () => {
-    console.log(JSON.parse(data))
+    console.log(JSON.stringify(JSON.parse(data), null, '  '))
   })
 })
 
