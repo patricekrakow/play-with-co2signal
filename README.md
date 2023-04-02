@@ -23,3 +23,23 @@ curl "https://api.co2signal.com/v1/latest?countryCode=%ZONE%" -H "auth-token: %A
 ```json
 {"_disclaimer":"This data is the exclusive property of Electricity Maps and/or related parties. If you're in doubt about your rights to use this data, please contact api@co2signal.com","status":"ok","countryCode":"BE","data":{"datetime":"2023-04-01T14:00:00.000Z","carbonIntensity":59,"fossilFuelPercentage":7.519999999999999},"units":{"carbonIntensity":"gCO2eq/kWh"}}
 ```
+
+(...)
+
+```text
+node index
+```
+
+```json
+{
+  _disclaimer: "This data is the exclusive property of Electricity Maps and/or related parties. If you're in doubt about your rights to use this data, please contact api@co2signal.com",
+  status: 'ok',
+  countryCode: 'BE',
+  data: {
+    datetime: '2023-04-02T10:00:00.000Z',
+    carbonIntensity: 54,
+    fossilFuelPercentage: 5.43
+  },
+  units: { carbonIntensity: 'gCO2eq/kWh' }
+}
+```
